@@ -1,0 +1,241 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1d7f6itk6x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "medscan_result.xml" ;
+	km-dev:modelPublicationTime "1554214647430"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"batch\"},{\"columnName\":\"doc\"},{\"columnName\":\"sec\"},{\"columnName\":\"sent\"},{\"columnName\":\"attr\"},{\"columnName\":\"name\"}],[{\"columnName\":\"batch\"},{\"columnName\":\"doc\"},{\"columnName\":\"attr\"},{\"columnName\":\"name\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"batch\"},{\"columnName\":\"doc\"},{\"columnName\":\"sec\"},{\"columnName\":\"sent\"},{\"columnName\":\"attr\"},{\"columnName\":\"name\"}],[{\"columnName\":\"batch\"},{\"columnName\":\"doc\"},{\"columnName\":\"attr\"},{\"columnName\":\"name\"}]]" ;
+	km-dev:hasModelLabel "medscan_result.xml" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"hasGithubURL\": true,
+                    \"GithubURL\": \"https://github.com/progressbg/my-app\",
+                    \"baseURI\": \"\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"batch\"},
+                    {\"columnName\": \"doc\"},
+                    {\"columnName\": \"attr\"},
+                    {\"columnName\": \"name\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"owl:Thing1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"batch\\\"},{\\\"columnName\\\":\\\"doc\\\"},{\\\"columnName\\\":\\\"attr\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"batch\\\"},{\\\"columnName\\\":\\\"doc\\\"},{\\\"columnName\\\":\\\"attr\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"batch\"},
+                    {\"columnName\": \"doc\"},
+                    {\"columnName\": \"sec\"},
+                    {\"columnName\": \"sent\"},
+                    {\"columnName\": \"attr\"},
+                    {\"columnName\": \"name\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"owl:Thing1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"batch\\\"},{\\\"columnName\\\":\\\"doc\\\"},{\\\"columnName\\\":\\\"sec\\\"},{\\\"columnName\\\":\\\"sent\\\"},{\\\"columnName\\\":\\\"attr\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"batch\\\"},{\\\"columnName\\\":\\\"doc\\\"},{\\\"columnName\\\":\\\"sec\\\"},{\\\"columnName\\\":\\\"sent\\\"},{\\\"columnName\\\":\\\"attr\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_49d77bf4-a5f9-43bb-9a8e-6434781f5785 a rr:TriplesMap .
+
+_:node1d7f6itk6x1 km-dev:hasTriplesMap km-dev:TriplesMap_49d77bf4-a5f9-43bb-9a8e-6434781f5785 .
+
+km-dev:TriplesMap_49d77bf4-a5f9-43bb-9a8e-6434781f5785 km-dev:isPartOfMapping _:node1d7f6itk6x1 .
+
+_:node1d7f6itk6x2 rr:tableName "medscan_result.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d7f6itk6x1 .
+
+_:node1d7f6itk6x1 km-dev:hasLogicalTable _:node1d7f6itk6x2 .
+
+km-dev:TriplesMap_49d77bf4-a5f9-43bb-9a8e-6434781f5785 rr:logicalTable _:node1d7f6itk6x2 ;
+	rr:subjectMap _:node1d7f6itk6x3 .
+
+_:node1d7f6itk6x1 km-dev:hasSubjectMap _:node1d7f6itk6x3 .
+
+_:node1d7f6itk6x3 km-dev:isPartOfMapping _:node1d7f6itk6x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing1" ;
+	rr:class owl:Thing ;
+	rr:template "{[\"batch\",\"doc\",\"attr\",\"name\"]}" ;
+	a km-dev:steinerTreeRootNode .
