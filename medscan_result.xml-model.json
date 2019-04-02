@@ -1,0 +1,150 @@
+{
+    "id": "medscan_result.xml",
+    "name": "medscan_result.xml",
+    "description": null,
+    "sourceColumns": [
+        {
+            "id": "HN60",
+            "hNodeId": "HN60",
+            "columnName": "name"
+        },
+        {
+            "id": "HN41",
+            "hNodeId": "HN41",
+            "columnName": "name"
+        }
+    ],
+    "mappingToSourceColumns": [
+        {
+            "id": "HN60",
+            "sourceColumnId": "HN60"
+        },
+        {
+            "id": "HN41",
+            "sourceColumnId": "HN41"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "http://www.w3.org/2002/07/owl#Thing1",
+                "label": {
+                    "uri": "http://www.w3.org/2002/07/owl#Thing",
+                    "rdfsLabel": null
+                },
+                "type": "InternalNode",
+                "modelIds": null
+            },
+            {
+                "id": "HN60",
+                "label": {
+                    "uri": "HN60",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN60",
+                "columnName": "name",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN60",
+                        "domain": {
+                            "uri": "http://www.w3.org/2002/07/owl#Thing",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN60",
+                        "domain": {
+                            "uri": "http://www.w3.org/2002/07/owl#Thing",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [],
+                "modelIds": null
+            },
+            {
+                "id": "HN41",
+                "label": {
+                    "uri": "HN41",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN41",
+                "columnName": "name",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN41",
+                        "domain": {
+                            "uri": "http://www.w3.org/2002/07/owl#Thing",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN41",
+                        "domain": {
+                            "uri": "http://www.w3.org/2002/07/owl#Thing",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [],
+                "modelIds": null
+            }
+        ],
+        "links": [
+            {
+                "id": "http://www.w3.org/2002/07/owl#Thing1---http://isi.edu/integration/karma/dev#classLink---HN60",
+                "weight": 0.01,
+                "type": "ClassInstanceLink",
+                "label": {
+                    "uri": "http://isi.edu/integration/karma/dev#classLink",
+                    "rdfsLabel": null
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "UriOfInstance",
+                "modelIds": null
+            },
+            {
+                "id": "http://www.w3.org/2002/07/owl#Thing1---http://isi.edu/integration/karma/dev#classLink---HN41",
+                "weight": 0.01,
+                "type": "ClassInstanceLink",
+                "label": {
+                    "uri": "http://isi.edu/integration/karma/dev#classLink",
+                    "rdfsLabel": null
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "UriOfInstance",
+                "modelIds": null
+            }
+        ]
+    }
+}
